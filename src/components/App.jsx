@@ -1,15 +1,12 @@
-import { Profile } from './Profile';
 import adverts from '../adverts.json';
+import { PageTitle } from './PageTitle';
+import { AdvertsList } from './AdvertsList';
 
-function App() {
+export const App = () => {
   return (
     <div>
-      <h1>Camper Rent</h1>
-      {adverts.map(adverts => (
-        <Profile key={adverts.id} adverts={adverts} />
-      ))}
+      <PageTitle text="Camper Rent"> </PageTitle>
+      <AdvertsList items={adverts}></AdvertsList>
     </div>
   );
-}
-
-export default App;
+};

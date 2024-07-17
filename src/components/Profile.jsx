@@ -11,7 +11,3 @@ export const Profile = ({ adverts: { gallery, name, price, favorite, rating, loc
     </div>
   );
 };
-
-// Profile({
-//   adverts: adverts,
-// });

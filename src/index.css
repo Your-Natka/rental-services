@@ -3,14 +3,10 @@
   line-height: 1.5;
   font-weight: 400;
 
-  --primary-black-color: #101828;
-  --primary-grey-color: #475467;
-  --primary-white-color: #fff;
-  --primary-button-color: #e44848;
-  --primary-button-hover-color: #d84343;
-  --primary-yellow-color: #ffc531;
-  --primary-filter-grey-color: #f2f4f7;
-  --primary-input-color: #f7f7f7;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -21,24 +17,8 @@ body {
   min-height: 100vh;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ul,
-ol {
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }

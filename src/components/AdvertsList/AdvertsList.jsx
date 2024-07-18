@@ -1,8 +1,8 @@
-import { Profile } from './Profile';
-
+import { Profile } from '../Profile/Profile';
+import './AdvertsList.css';
 export const AdvertsList = ({ items }) => {
   return (
-    <ul>
+    <ul className="list">
       {items.map(adverts => (
         <li key={adverts.id}>
           <Profile adverts={adverts} />

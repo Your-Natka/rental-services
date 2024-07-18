@@ -4,7 +4,10 @@ import { FaHeart } from 'react-icons/fa6';
 import css from './Profile.module.css';
 import defaultGallery from './default-gallery.png';
 
-export const Profile = ({ adverts: { gallery, name, price, favorite, rating, location } }) => {
+export const Profile = ({
+  adverts: { gallery, name, price, favorite, rating, location },
+  // clickHeart,
+}) => {
   const profileImage = gallery || defaultGallery;
 
   const statusClass = favorite ? css.isFavorite : css.isRetired;
@@ -22,13 +25,20 @@ export const Profile = ({ adverts: { gallery, name, price, favorite, rating, loc
       <img className={css.card} src={gallery[0]} alt={name} width="310" height="290" />
       <div>
         <h2 className={css.title}>{name}</h2>
-        <p className={css.title}>
-          €{price}
-          <span className={statusClass}>
-            <FaHeart className={css.icon} />
-            {favorite ? 'Favorite' : 'Retired'}
-          </span>
-        </p>
+        <div>
+          <p className={css.title}>
+            €{price}
+            <span className={statusClass}>
+              <FaHeart className={css.icon} />
+              {favorite ? 'Favorite' : 'Retired'}
+            </span>
+          </p>
+          {/* <button className={css.btn_heart} type="button" onClick={() => clickHeart(item.id)}>
+            <svg width="24" height="24">
+              <use href={`${icons}#icon-heart`}></use>
+            </svg>
+          </button> */}
+        </div>
         <p>
           <FaStar className={css.iconFa} />
           {rating}

@@ -1,9 +1,36 @@
 .container {
-  border: 1px solid #f2f4f7;
+  border: 1px solid #101828;
+  border-radius: 20px;
+  gap: 24px;
+  padding: 24px;
+}
+.card {
+  border-radius: 10px;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.icon {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.iconFa {
+  margin-right: 6px;
+  color: #ffc531;
+}
+.button {
+  width: 166px;
+  height: 56px;
+  border-radius: 200px;
+  border: #d84343;
+  background-color: #d84343;
+  color: #fff;
 }
 
-.title {
-  background-color: green;
+.button:hover,
+.button:focus {
+  background-color: #e44848;
 }
 .status {
   background-color: aquamarine;

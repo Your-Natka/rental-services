@@ -1,0 +1,19 @@
+.container {
+  border: 1px solid #f2f4f7;
+}
+
+.title {
+  background-color: green;
+}
+.status {
+  background-color: aquamarine;
+}
+
+.isFavorite {
+  composes: status;
+  color: red;
+}
+.isRetired {
+  composes: status;
+  color: green;
+}

@@ -1,5 +1,5 @@
-import './PageTitle.css';
+import css from './PageTitle.module.css';
 
 export const PageTitle = ({ children }) => {
-  return <h1 className="title">{children}</h1>;
+  return <h1 className={css.title}>{children}</h1>;
 };

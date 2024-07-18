@@ -1,5 +1,6 @@
 import { Profile } from '../Profile/Profile';
 import './AdvertsList.css';
+
 export const AdvertsList = ({ items }) => {
   return (
     <ul className="list">

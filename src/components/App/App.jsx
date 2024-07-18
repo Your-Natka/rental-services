@@ -1,7 +1,8 @@
 import adverts from '../../adverts.json';
 import { PageTitle } from '../PageTitle/PageTitle';
 import { AdvertsList } from '../AdvertsList/AdvertsList';
-import './App.module.css';
+import './App.css';
+
 export const App = () => {
   return (
     <div>

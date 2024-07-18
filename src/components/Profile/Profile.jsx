@@ -10,7 +10,7 @@ export const Profile = ({ adverts: { gallery, name, price, favorite, rating, loc
   return (
     <div className="profile-container">
       <img src={gallery[0]} alt={name} width="310" height="290" />
-      <h2 className={css.title}>{name}</h2>
+      <h2>{name}</h2>
       <p>{price}</p>
       <p className={statusClasses.join(' ')}>{favorite ? 'Favorite' : 'Retired'}</p>
       <p>{rating}</p>

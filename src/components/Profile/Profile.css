@@ -2,14 +2,10 @@
   border: 1px solid #f2f4f7;
 }
 
-.title {
-  background-color: green;
-}
-
-.profile-container .status.isFavorite {
+.profile-container .status.is-favorite {
   color: red;
 }
 
-.profile-container .status.isRetired {
+.profile-container .status.is-retired {
   color: green;
 }

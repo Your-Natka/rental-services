@@ -5,7 +5,7 @@ import css from './Profile.module.css';
 import defaultGallery from './default-gallery.png';
 
 export const Profile = ({
-  adverts: { gallery, name, price, favorite, rating, location },
+  adverts: { gallery, name, price, favorite, rating, reviews, reviews_rating, location },
   // clickHeart,
 }) => {
   const profileImage = gallery || defaultGallery;
@@ -41,7 +41,7 @@ export const Profile = ({
         </div>
         <p>
           <FaStar className={css.iconFa} />
-          {rating}
+          {rating} ({reviews[0].reviews_rating} Reviews)
           <IoLocationOutline className={css.icon} />
           {location}
         </p>

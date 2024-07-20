@@ -16,13 +16,17 @@ import { GiSurferVan } from 'react-icons/gi';
 
 import css from './Footer.module.css';
 
-console.log(css);
-
-export const Footer = ({ children }) => {
+const Footer = () => {
   return (
-    <h1 className={css.title}>
-      <GiSurferVan className={css.icon} />
-      {children}
-    </h1>
+    <footer className={css.footer}>
+      <div className={css.contactBox}>
+        <GiSurferVan className={css.icon} />
+        <a href="mailto:natalya1.10nb@gmail.com" className={css.footerLink}>
+          Natalya Bodnarchuk
+        </a>
+      </div>
+      <p>2024</p>
+    </footer>
   );
 };
+export default Footer;

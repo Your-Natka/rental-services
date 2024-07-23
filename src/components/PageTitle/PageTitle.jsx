@@ -9,10 +9,10 @@ const buildLinkClass = ({ isActive }) => {
 export const PageTitle = () => {
   return (
     <header className={css.header}>
-      <NavLink className={css.box_logo} to="/">
+      {/* <NavLink className={css.box_logo} to="/">
         <GiSurferVan className={css.icon} />
-        <h1 className={css.title}>Rental services</h1>
-      </NavLink>
+        <h1 className={css.title}>Camper Rent</h1>
+      </NavLink> */}
       <nav className={css.nav}>
         <NavLink to="/" className={buildLinkClass}>
           Home

@@ -12,18 +12,19 @@
 //     </h1>
 //   );
 // };
+import { NavLink } from 'react-router-dom';
 import { GiSurferVan } from 'react-icons/gi';
-
-import css from './Footer.module.css';
+import css from '../Footer/Footer.module.css';
 
 const Footer = () => {
   return (
     <footer className={css.footer}>
       <div className={css.contactBox}>
         <GiSurferVan className={css.icon} />
-        <a href="mailto:natalya1.10nb@gmail.com" className={css.footerLink}>
+
+        <NavLink className={css.logo} href="mailto:natalya1.10nb@gmail.com">
           Natalya Bodnarchuk
-        </a>
+        </NavLink>
       </div>
       <p>2024</p>
     </footer>

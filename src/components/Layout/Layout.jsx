@@ -1,17 +1,17 @@
 import { Outlet } from 'react-router-dom';
 // import PageTitle from '../PageTitle/PageTitle';
-import css from '../Layuot/Layuot.module.css';
+import css from '../Layout/Layout';
 // import Footer from '../Footer/Footer';
 import { Suspense } from 'react';
 
 export default function Layout() {
   return (
     <div className={css.containerMain}>
-      {/* <PageTitle></PageTitle> */}
+      <PageTitle></PageTitle>
       <Suspense fallback={null}>
         <Outlet />
       </Suspense>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </div>
   );
 }
